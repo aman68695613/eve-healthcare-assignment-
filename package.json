@@ -1,0 +1,42 @@
+{
+  "name": "eve-healthcare-booking-api",
+  "version": "1.0.0",
+  "description": "Backend service for diagnostic test bookings and simulated payments - EVE Healthcare SDE Intern Assignment",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --forceExit --detectOpenHandles --verbose",
+    "test:coverage": "jest --forceExit --detectOpenHandles --coverage",
+    "db:seed": "node src/seeders/seed.js",
+    "lint": "eslint src/"
+  },
+  "keywords": ["healthcare", "diagnostic", "booking", "api", "express"],
+  "author": "Aman Srivastava",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^10.0.0",
+    "winston": "^3.14.2",
+    "express-validator": "^7.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}
